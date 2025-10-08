@@ -97,7 +97,8 @@ DATABASES = {
         'OPTIONS': {
             # Limit số connections per process
             'connect_timeout': 10,
-            'options': '-c statement_timeout=30000',  # 30s timeout cho queries
+            'options': '-c statement_timeout=30000',
+            "options": "-c search_path=togogonews"  # 30s timeout cho queries
         },
     }
 }
